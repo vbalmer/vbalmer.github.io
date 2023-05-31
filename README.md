@@ -12,7 +12,7 @@
 *   [Content](#content)
 *   [Contributors](#contributors)
 
-Paper preprint: [![Paper preprint](https://arxiv.org/abs/2211.16406)](https://arxiv.org/abs/2211.16406)
+[![Paper preprint (ArXiv)](https://arxiv.org/abs/2211.16406)](https://arxiv.org/abs/2211.16406)
 
 <!-- -->
 <!-- *   [Citation](#citation)-->
