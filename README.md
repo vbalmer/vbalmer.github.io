@@ -56,10 +56,10 @@ This research adopts the propositions of SIA 112 for chosing the bridge design f
 # <a name="sec:data"></a> Synthetic Data Generation Pipeline and Dataset
 The training of the deep latent generative model is collected in a two-stage approach: a central Latin Hypercube Sampling of the design space is launched at first. At second, the sampled design features $$\mathbf{x}$$ are handed to performance simulators to obtain the performance metrics $$\mathcal{P}(\mathbf{x})$$ as defined before, where analytical formoluae as well as the Finite-Element-Analysis software "Sofistik" is utilised. A parametric template for the FEA-based structural analysis was developed and connected to Revit via zero-touch nodes inside Dynamo for the FEA performance simulator to be able to evaluate the vast amounts of parameter samples in a standardised way.
 
-The data set can be found under this [![Link](https://github.com/vbalmer/vbalmer.github.io/tree/main/DataSet)](https://github.com/vbalmer/vbalmer.github.io/tree/main/DataSet)
+The generated data set can be found under this [![Link](https://github.com/vbalmer/vbalmer.github.io/tree/main/DataSet)](https://github.com/vbalmer/vbalmer.github.io/tree/main/DataSet).
 
 # <a name="sec:MLmodel"></a> Machine Learning Model
-The ML model used in this study is a variation of Conditional Variational Autoencoders (CVAE) \cite{cvae_sohn}. In light of having to solve both a forward as well as an inverse problem, we forgo feeding the conditional $$\mathbf{y}$$ to the encoder and instead let it predict the performance metrics together with a latent vector in two separate heads as shown below.
+The ML model used in this study is a variation of Conditional Variational Autoencoders (CVAE) \cite{cvae_sohn}. In light of having to solve both a forward as well as an inverse problem, we forgo feeding the conditional $\mathbf{y}$ to the encoder and instead let it predict the performance metrics together with a latent vector in two separate heads as shown below.
 
 **cVAE Model**<br />
 <img src="https://mkrausai.github.io/research/01_SciML/01_BH_PedestrianBridge_XAI/figs/cvae.JPG" width="50%" alt="cVAE_Model" /><br />
